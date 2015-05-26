@@ -10,7 +10,7 @@
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<uses-library android:name="com.android.future.usb.accessory"
 			android:required="false" />
-		<activity android:label="@string/app_name" android:name="MainActivity"
+		<activity android:label="@string/app_name" android:name="MenuMain"
 			android:launchMode="singleTask">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -23,12 +23,7 @@
 				android:resource="@xml/accessory_filter" />
 		</activity>
 		
-		        <activity
-            android:name="ioio.examples.hello.MenuMain"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-            
-        </activity>
+		    
         <activity
             android:name="ioio.examples.hello.WorkerUploadActivity"
             android:screenOrientation="portrait" >
@@ -53,5 +48,7 @@
             android:name="ioio.examples.hello.VisitorUploadActivity"
             android:screenOrientation="portrait" >
         </activity>
+        <service android:name=".MainActivity"
+            android:exported="false"/>
 	</application>
 </manifest>

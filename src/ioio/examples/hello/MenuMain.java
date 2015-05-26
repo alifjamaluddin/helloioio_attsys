@@ -14,25 +14,31 @@ public class MenuMain extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_role);
+		Intent intent = new Intent(this, MainActivity.class);
+		startService(intent);
 	}
 
 	public void workerLogin(View view) {
-//		Intent intent = new Intent(this, WorkerLoginActivity.class);
-//		startActivity(intent);
-		Context context = getApplicationContext();
-		CharSequence text = "Door open!";
-		int duration = Toast.LENGTH_SHORT;
+		Intent intent = new Intent(this, WorkerLoginActivity.class);
+		startActivity(intent);
+//		Context context = getApplicationContext();
+//		CharSequence text = "Door open!";
+//		int duration = Toast.LENGTH_SHORT;
 
 //		Toast toast = Toast.makeText(context, text, duration);
 //		toast.show();
 //		ioio.bukaPintu();
+		
 	}
 	public void visitorLogin(View view) {
-//		Intent intent = new Intent(this, VisitorLoginActivity.class);
-//		startActivity(intent);
-		Context context = getApplicationContext();
-		CharSequence text = "Door close!";
-		int duration = Toast.LENGTH_SHORT;
+		Intent intent = new Intent(this, VisitorLoginActivity.class);
+		startActivity(intent);
+//		Context context = getApplicationContext();
+//		CharSequence text = "Door close!";
+//		int duration = Toast.LENGTH_SHORT;
+		
+//		Intent intent = new Intent(this, MainActivity.class);
+//		stopService(intent);
 
 //		Toast toast = Toast.makeText(context, text, duration);
 //		toast.show();

@@ -233,7 +233,8 @@ public class WorkerUploadActivity extends Activity {
 
 			// showing the server response in an alert dialog
 			if(result.equals("success")){
-				showAlert(result+" and open door function should be called here");
+				openDoor();
+//				showAlert(result+" and open door function should be called here");
 				
 			}
 			else{
@@ -262,6 +263,11 @@ public class WorkerUploadActivity extends Activity {
 				});
 		AlertDialog alert = builder.create();
 		alert.show();
+	}
+	
+	private void openDoor(){
+		Intent intent = new Intent(this, MainActivity.class);
+		stopService(intent);
 	}
 
 }

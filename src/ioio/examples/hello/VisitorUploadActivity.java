@@ -232,7 +232,8 @@ public class VisitorUploadActivity extends Activity {
 
 			// showing the server response in an alert dialog
 			if(result.equals("success")){
-				showAlert(result+" and open door function should be called here");
+				openDoor();
+//				showAlert(result+" and open door function should be called here");
 			}
 			else{
 				showAlert(result+" <= error");
@@ -258,6 +259,18 @@ public class VisitorUploadActivity extends Activity {
 				});
 		AlertDialog alert = builder.create();
 		alert.show();
+	}
+	
+	private void openDoor(){
+		Intent intent = new Intent(this, MainActivity.class);
+		stopService(intent);
+		
+		
+	}
+	
+	public void redirect() {
+		Intent intent = new Intent(this, MenuMain.class);
+		startActivity(intent);
 	}
 
 }
