@@ -6,6 +6,7 @@ import ioio.lib.util.BaseIOIOLooper;
 import ioio.lib.util.IOIOLooper;
 import ioio.lib.util.android.IOIOActivity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.ToggleButton;
 
 /**
@@ -25,9 +26,25 @@ public class MainActivity extends IOIOActivity {
 	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		button_ = (ToggleButton) findViewById(R.id.button);
+		
+		alternate();
+		
+	}
+	
+	public void alternate(){
+		final Handler handler = new Handler();
+		handler.postDelayed(new Runnable() {
+		    @Override
+		    public void run() {
+		        // Do something after 5s = 5000ms
+		       button_.toggle();
+		    }
+		}, 5000);
+		alternate();
 	}
 
 	/**
