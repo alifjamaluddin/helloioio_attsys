@@ -5,8 +5,8 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="/FrontendIOIO_AttendanceSystem/libs/httpclient-4.3.6.jar"/>
-	<classpathentry kind="lib" path="/FrontendIOIO_AttendanceSystem/libs/httpcore-4.3.3.jar"/>
-	<classpathentry kind="lib" path="/FrontendIOIO_AttendanceSystem/libs/httpmime-4.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mohammad/android-support-v7-appcompat/libs/httpmime-4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mohammad/android-support-v7-appcompat/libs/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mohammad/Downloads/httpclient-4.3.6.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
