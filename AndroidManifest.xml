@@ -11,6 +11,7 @@
 		<uses-library android:name="com.android.future.usb.accessory"
 			android:required="false" />
 		<activity android:label="@string/app_name" android:name="MenuMain"
+		    android:theme="@style/Theme.AppCompat"
 			android:launchMode="singleTask">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -26,26 +27,32 @@
 		    
         <activity
             android:name="ioio.examples.hello.WorkerUploadActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ioio.examples.hello.WorkerLoginActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ioio.examples.hello.VisitorLoginActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
          <activity
             android:name="ioio.examples.hello.WorkerMainActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ioio.examples.hello.VisitorMainActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ioio.examples.hello.VisitorUploadActivity"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" >
         </activity>
         <service android:name=".MainActivity"

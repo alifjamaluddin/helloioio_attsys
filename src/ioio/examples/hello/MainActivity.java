@@ -90,7 +90,7 @@ public class MainActivity extends Service {
 		@Override
 		public void loop() throws ConnectionLostException {
 //			led_.write(!button_.isChecked());
-			led_.write(true);
+			led_.write(false);
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {

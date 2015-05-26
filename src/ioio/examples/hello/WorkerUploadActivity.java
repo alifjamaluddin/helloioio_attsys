@@ -5,11 +5,11 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.InputStreamReader;	
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import ioio.examples.hello.AndroidMultiPartEntity.ProgressListener;
+import ioio.examples.hello.AndroidMultiPartEntity.*;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
